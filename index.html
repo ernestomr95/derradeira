@@ -119,6 +119,54 @@
             padding: 10px;
         }
         
+        /* Nav container for mobile */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-wrap: wrap;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-menu {
+                display: none;
+                width: 100%;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background: #1a0f0a;
+                flex-direction: column;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            }
+            
+            .nav-menu.active {
+                display: flex;
+            }
+            
+            .nav-menu li {
+                width: 100%;
+                border-bottom: 1px solid rgba(212,165,116,0.2);
+            }
+            
+            .nav-menu a {
+                display: block;
+                padding: 15px 25px;
+                border-radius: 0;
+                text-align: left;
+            }
+            
+            .nav-menu a:hover,
+            .nav-menu a.active {
+                background: rgba(212,165,116,0.15);
+                color: #d4a574;
+            }
+            
+            .nav-menu a::after {
+                display: none;
+            }
+        }
+        
         /* Secciones */
         .section {
             min-height: 100vh;
@@ -466,57 +514,6 @@
             }
         }
         @media (max-width: 768px) {
-            .nav-container {
-                flex-wrap: wrap;
-            }
-            
-            .nav-menu {
-                display: none;
-                width: 100%;
-                background: #1a0f0a;
-                flex-direction: column;
-                gap: 0;
-                padding: 20px 0;
-                box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-            }
-            
-            .nav-menu.active {
-                display: flex;
-            }
-            
-            .nav-menu li {
-                width: 100%;
-                border-bottom: 1px solid rgba(212,165,116,0.2);
-            }
-            
-            .nav-menu a {
-                display: block;
-                width: 100%;
-                padding: 15px 25px;
-                border-radius: 0;
-                text-align: left;
-                font-size: 1.2em;
-            }
-            
-            .nav-menu a:hover,
-            .nav-menu a.active {
-                background: rgba(212,165,116,0.15);
-                color: #d4a574;
-                transform: none;
-            }
-            
-            .nav-menu a::after {
-                display: none;
-            }
-            
-            .mobile-menu-btn {
-                display: block;
-            }
-            
-            .mobile-overlay.active {
-                display: block;
-            }
-            
             .logo {
                 font-size: 3em;
             }

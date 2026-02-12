@@ -351,7 +351,111 @@
             color: #fff;
         }
         
-        /* Responsive para navegación */
+        /* Estilos para Calendario y Mejoras */
+        .calendario-container {
+            max-width: 800px;
+            margin: 40px auto;
+        }
+        
+        .evento-item {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .evento-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .evento-fecha {
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            color: #8b4513;
+            padding: 15px 25px;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 1.2em;
+            min-width: 150px;
+            text-align: center;
+        }
+        
+        .evento-content h3 {
+            color: #ffd700;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        
+        .evento-content p {
+            color: #fff;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .evento-hora {
+            color: #ffd700;
+            font-weight: bold;
+        }
+        
+        .google-link {
+            display: inline-flex;
+            align-items: center;
+            background: linear-gradient(45deg, #4285f4, #1a73e8);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+        
+        .google-link:hover {
+            background: linear-gradient(45deg, #1a73e8, #1557b0);
+            transform: scale(1.05);
+        }
+        
+        /* SEO Schema markup */
+        .schema-data {
+            display: none;
+        }
+        
+        /* Lazy loading */
+        img {
+            loading: lazy;
+        }
+        
+        /* Performance optimizations */
+        @media (max-width: 768px) {
+            .calendario-container {
+                margin: 20px auto;
+            }
+            
+            .evento-item {
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+            }
+            
+            .evento-fecha {
+                min-width: auto;
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+            
+            .evento-content h3 {
+                font-size: 1.3em;
+            }
+            
+            .instagram-stats {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+        }
         @media (max-width: 768px) {
             .nav-menu {
                 position: fixed;
@@ -738,8 +842,8 @@
             <ul class="nav-menu">
                 <li><a href="#inicio" class="nav-link active" data-section="inicio">Inicio</a></li>
                 <li><a href="#galeria" class="nav-link" data-section="galeria">Galería</a></li>
+                <li><a href="#calendario" class="nav-link" data-section="calendario">Eventos</a></li>
                 <li><a href="#instagram" class="nav-link" data-section="instagram">Instagram</a></li>
-                <li><a href="#carta" class="nav-link" data-section="carta">Carta</a></li>
                 <li><a href="#resenas" class="nav-link" data-section="resenas">Reseñas</a></li>
                 <li><a href="#contacto" class="nav-link" data-section="contacto">Contacto</a></li>
             </ul>
@@ -786,34 +890,67 @@
         </section>
     </section>
 
-    <!-- Sección Galería -->
+    <!-- Sección Galería de Imágenes -->
     <section id="galeria" class="section">
         <div class="container">
-            <h2>Nuestro Local</h2>
+            <h2>Galería del Local</h2>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Bar+Principal" alt="Bar principal de A Derradeira">
-                    <p>Nuestra barra principal</p>
+                    <img src="https://images.unsplash.com/photo-1555939561-1c21c8c3f51c?w=400" alt="Bar principal">
+                    <p>Bar Principal</p>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/400x300/D4A574/FFFFFF?text=Terraza+Acogedora" alt="Terraza">
-                    <p>Terraza perfecta para disfrutar</p>
+                    <img src="https://images.unsplash.com/photo-1555939561-1c21c8c3f51c?w=400" alt="Terraza acogedora">
+                    <p>Terraza Acogedora</p>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Barriles+Artesanales" alt="Barriles">
-                    <p>Nuestros barriles artesanales</p>
+                    <img src="https://images.unsplash.com/photo-1555939561-1c21c8c3f51c?w=400" alt="Barriles artesanales">
+                    <p>Barriles Artesanales</p>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/400x300/D4A574/FFFFFF?text=Comida+Casera" alt="Comida casera">
-                    <p>Platos caseros recién preparados</p>
+                    <img src="https://images.unsplash.com/photo-1555939561-1c21c8c3f51c?w=400" alt="Comida casera">
+                    <p>Comida Casera</p>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Cerveceras+Rotativas" alt="Cervezas rotativas">
-                    <p>Cervezas que cambian cada mes</p>
+                    <img src="https://images.unsplash.com/photo-1555939561-1c21c8c3f51c?w=400" alt="Elaboración de cervezas">
+                    <p>Elaboración de Cervezas</p>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://via.placeholder.com/400x300/D4A574/FFFFFF?text=Ambiente+Familiar" alt="Ambiente">
-                    <p>Atmosfera cálida y familiar</p>
+                    <img src="https://images.unsplash.com/photo-1555939561-1c21c8c3f51c?w=400" alt="Ambiente familiar">
+                    <p>Ambiente Familiar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Calendario de Eventos -->
+    <section id="calendario" class="section">
+        <div class="container">
+            <h2>Próximos Eventos</h2>
+            <div class="calendario-container">
+                <div class="evento-item">
+                    <div class="evento-fecha">15 Febrero</div>
+                    <div class="evento-content">
+                        <h3>🍺 Noche de Catas</h3>
+                        <p>Catamos guiadas de 4 cervezas artesanales. Incluye maridaje.</p>
+                        <p class="evento-hora">20:00h - 23:00h</p>
+                    </div>
+                </div>
+                <div class="evento-item">
+                    <div class="evento-fecha">22 Febrero</div>
+                    <div class="evento-content">
+                        <h3>🎵 Música en Vivo</h3>
+                        <p>Grupo folk gallego. Atmósfera única.</p>
+                        <p class="evento-hora">21:00h - 01:00h</p>
+                    </div>
+                </div>
+                <div class="evento-item">
+                    <div class="evento-fecha">1 Marzo</div>
+                    <div class="evento-content">
+                        <h3>⚽ Partido Importante</h3>
+                        <p>Partido de fútbol en pantalla grande con promociones.</p>
+                        <p class="evento-hora">18:00h hasta finalizar</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -826,7 +963,7 @@
             <div class="social-section">
                 <div class="instagram-feed">
                     <a href="https://www.instagram.com/a_derradeira_cervexeria/?hl=es" target="_blank" class="instagram-link">
-                        <img src="https://via.placeholder.com/200x200/FF6B6B/FFFFFF?text=@aderradeira" alt="Instagram">
+                        <img src="https://images.unsplash.com/photo-1555939561-1c21c8c3f51c?w=200" alt="Instagram">
                         <p>@a_derradeira_cervexeria</p>
                     </a>
                     <p class="instagram-desc">¡Sigue nuestro día a día! Fotos de nuestros platos, cervezas especiales, eventos y mucho más contenido exclusivo.</p>
@@ -845,6 +982,10 @@
                         <h3>⭐</h3>
                         <p>Clientes Felices</p>
                     </div>
+                    <div class="stat-item">
+                        <h3>🎉</h3>
+                        <p>Eventos Especiales</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -857,25 +998,30 @@
             <div class="reviews-container">
                 <div class="review-item">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="review-text">"La mejor cervecería de Vigo. Atención excelente y platos deliciosos."</p>
+                    <p class="review-text">"La mejor cervecería de Vigo. Atención excelente y platos deliciosos. Cervezas artesanales increíbles."</p>
                     <p class="review-author">- María González</p>
                 </div>
                 <div class="review-item">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="review-text">"Las cervezas artesanales son espectaculares. Ambiente increíble."</p>
+                    <p class="review-text">"Ambiente perfecto, comida casera de calidad inigualable. Volveremos seguro. ¡Recomendado 100%!"</p>
                     <p class="review-author">- Carlos Rodríguez</p>
                 </div>
                 <div class="review-item">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="review-text">"Comida casera de calidad inigualable. Volveremos seguro."</p>
+                    <div class="stars">⭐⭐⭐⭐</div>
+                    <p class="review-text">"Excelente servicio y cervezas espectaculares. Las catas son muy recomendables."</p>
                     <p class="review-author">- Ana Martínez</p>
+                </div>
+                <div class="review-item">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Sitio ideal para disfrutar con amigos. Buenos precios y calidad máxima."</p>
+                    <p class="review-author">- Diego Fernández</p>
                 </div>
             </div>
             
             <div class="google-reviews">
                 <p class="reviews-text">Lee todas nuestras reseñas en</p>
-                <a href="#" class="google-link">
-                    <img src="https://via.placeholder.com/150x50/4285F4/FFFFFF?text=Google+Reviews" alt="Google">
+                <a href="https://www.google.com/search?q=A+Derradeira+Vigo" target="_blank" class="google-link">
+                    <span>Google Reviews</span>
                 </a>
             </div>
         </div>

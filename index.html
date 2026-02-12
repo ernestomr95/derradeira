@@ -406,6 +406,301 @@
             .info-section h2 {
                 font-size: 2em;
             }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+            }
+            
+            .gallery-item {
+                padding: 15px;
+            }
+            
+            .gallery-item img {
+                height: 150px;
+            }
+            
+            .instagram-stats {
+                gap: 20px;
+            }
+            
+            .stat-item {
+                min-width: 120px;
+                padding: 15px;
+            }
+            
+            .reviews-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .menu-categories {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+            }
+            
+            .tagline {
+                font-size: 1.3em;
+            }
+            
+            .hero h2 {
+                font-size: 2em;
+            }
+            
+            .hero p {
+                font-size: 1.1em;
+            }
+            
+            .features {
+                padding: 40px 0;
+            }
+            
+            .feature {
+                padding: 30px 20px;
+            }
+            
+            .menu-preview h2 {
+                font-size: 2em;
+            }
+            
+            .info-section h2 {
+                font-size: 2em;
+            }
+        }
+        
+        /* Galería y nuevas secciones */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .gallery-item {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .gallery-item p {
+            color: #ffd700;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        
+        .social-section {
+            background: rgba(0,0,0,0.4);
+            padding: 60px 20px;
+            margin: 40px 0;
+            border-radius: 20px;
+            text-align: center;
+        }
+        
+        .social-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #ffd700;
+        }
+        
+        .instagram-feed {
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+        
+        .instagram-link {
+            display: inline-block;
+            background: linear-gradient(45deg, #E1306C, #C13584);
+            padding: 20px;
+            border-radius: 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .instagram-link:hover {
+            transform: scale(1.05);
+        }
+        
+        .instagram-link img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid white;
+            margin-bottom: 10px;
+        }
+        
+        .instagram-desc {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        
+        .instagram-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            text-align: center;
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            min-width: 150px;
+        }
+        
+        .stat-item h3 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        .stat-item p {
+            font-size: 1em;
+            color: #fff;
+        }
+        
+        .reviews-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .review-item {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .review-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stars {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+        
+        .review-text {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-style: italic;
+            color: #ffd700;
+        }
+        
+        .review-author {
+            font-size: 1em;
+            font-weight: bold;
+            text-align: right;
+        }
+        
+        .google-reviews {
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .google-link {
+            display: inline-block;
+            background: rgba(255,255,255,0.1);
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .google-link:hover {
+            background: rgba(255,255,255,0.2);
+            transform: scale(1.05);
+        }
+        
+        .google-link img {
+            width: auto;
+            height: 30px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        
+        .menu-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 20px;
+        }
+        
+        .menu-category {
+            background: rgba(0,0,0,0.3);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .menu-category h3 {
+            color: #ffd700;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+            }
+            
+            .tagline {
+                font-size: 1.3em;
+            }
+            
+            .hero h2 {
+                font-size: 2em;
+            }
+            
+            .hero p {
+                font-size: 1.1em;
+            }
+            
+            .features {
+                padding: 40px 0;
+            }
+            
+            .feature {
+                padding: 30px 20px;
+            }
+            
+            .menu-preview h2 {
+                font-size: 2em;
+            }
+            
+            .info-section h2 {
+                font-size: 2em;
+            }
         }
         
         @media (max-width: 480px) {
@@ -442,7 +737,10 @@
             <div class="nav-logo">A Derradeira</div>
             <ul class="nav-menu">
                 <li><a href="#inicio" class="nav-link active" data-section="inicio">Inicio</a></li>
+                <li><a href="#galeria" class="nav-link" data-section="galeria">Galería</a></li>
+                <li><a href="#instagram" class="nav-link" data-section="instagram">Instagram</a></li>
                 <li><a href="#carta" class="nav-link" data-section="carta">Carta</a></li>
+                <li><a href="#resenas" class="nav-link" data-section="resenas">Reseñas</a></li>
                 <li><a href="#contacto" class="nav-link" data-section="contacto">Contacto</a></li>
             </ul>
             <button class="mobile-menu-btn">☰</button>
@@ -488,64 +786,173 @@
         </section>
     </section>
 
+    <!-- Sección Galería -->
+    <section id="galeria" class="section">
+        <div class="container">
+            <h2>Nuestro Local</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Bar+Principal" alt="Bar principal de A Derradeira">
+                    <p>Nuestra barra principal</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300/D4A574/FFFFFF?text=Terraza+Acogedora" alt="Terraza">
+                    <p>Terraza perfecta para disfrutar</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Barriles+Artesanales" alt="Barriles">
+                    <p>Nuestros barriles artesanales</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300/D4A574/FFFFFF?text=Comida+Casera" alt="Comida casera">
+                    <p>Platos caseros recién preparados</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Cerveceras+Rotativas" alt="Cervezas rotativas">
+                    <p>Cervezas que cambian cada mes</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300/D4A574/FFFFFF?text=Ambiente+Familiar" alt="Ambiente">
+                    <p>Atmosfera cálida y familiar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Instagram -->
+    <section id="instagram" class="section">
+        <div class="container">
+            <h2>Síguenos en Instagram</h2>
+            <div class="social-section">
+                <div class="instagram-feed">
+                    <a href="https://www.instagram.com/a_derradeira_cervexeria/?hl=es" target="_blank" class="instagram-link">
+                        <img src="https://via.placeholder.com/200x200/FF6B6B/FFFFFF?text=@aderradeira" alt="Instagram">
+                        <p>@a_derradeira_cervexeria</p>
+                    </a>
+                    <p class="instagram-desc">¡Sigue nuestro día a día! Fotos de nuestros platos, cervezas especiales, eventos y mucho más contenido exclusivo.</p>
+                </div>
+                
+                <div class="instagram-stats">
+                    <div class="stat-item">
+                        <h3>🍺</h3>
+                        <p>Cervezas Artesanales</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>🍽️</h3>
+                        <p>Platos Caseros</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>⭐</h3>
+                        <p>Clientes Felices</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Reseñas -->
+    <section id="resenas" class="section">
+        <div class="container">
+            <h2>Lo que dicen de nosotros</h2>
+            <div class="reviews-container">
+                <div class="review-item">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"La mejor cervecería de Vigo. Atención excelente y platos deliciosos."</p>
+                    <p class="review-author">- María González</p>
+                </div>
+                <div class="review-item">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Las cervezas artesanales son espectaculares. Ambiente increíble."</p>
+                    <p class="review-author">- Carlos Rodríguez</p>
+                </div>
+                <div class="review-item">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Comida casera de calidad inigualable. Volveremos seguro."</p>
+                    <p class="review-author">- Ana Martínez</p>
+                </div>
+            </div>
+            
+            <div class="google-reviews">
+                <p class="reviews-text">Lee todas nuestras reseñas en</p>
+                <a href="#" class="google-link">
+                    <img src="https://via.placeholder.com/150x50/4285F4/FFFFFF?text=Google+Reviews" alt="Google">
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Sección Carta -->
     <section id="carta" class="section">
         <div class="container">
             <div class="menu-preview">
                 <h2>Nuestra Carta</h2>
-                <div class="menu-items">
-                    <div class="menu-item">
-                        <h4>Raciones Caseras</h4>
-                        <p>Pimientos de Padrón, chipirones a la plancha, lacón con grelos y todas nuestras especialidades gallegas.</p>
-                        <div class="price">Desde 6€</div>
+                <div class="menu-categories">
+                    <div class="menu-category">
+                        <h3>🍺 Cervezas Artesanales</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <h4>IPA American</h4>
+                                <p>Lúpulo fuerte, notas cítricas y amargor equilibrado</p>
+                                <div class="price">4€/caña</div>
+                            </div>
+                            <div class="menu-item">
+                                <h4>Golden Ale</h4>
+                                <p>Suave, afrutada, fácil de beber</p>
+                                <div class="price">4€/caña</div>
+                            </div>
+                            <div class="menu-item">
+                                <h4>Stout</h4>
+                                <p>Torrencia, notas de café y chocolate</p>
+                                <div class="price">4.5€/caña</div>
+                            </div>
+                            <div class="menu-item">
+                                <h4>Weissbier</h4>
+                                <p>Trigo, ligera, refrescante</p>
+                                <div class="price">3.5€/caña</div>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="menu-item">
-                        <h4>Tapas Innovadoras</h4>
-                        <p>Fusión de la cocina tradicional con toques modernos. Croquetas de cerveza, hamburguesas gourmet, y mucho más.</p>
-                        <div class="price">Desde 8€</div>
+                    <div class="menu-category">
+                        <h3>🍽️ Raciones Caseras</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <h4>Pimientos de Padrón</h4>
+                                <p>Directos de Padrón, al punto perfecto</p>
+                                <div class="price">6€</div>
+                            </div>
+                            <div class="menu-item">
+                                <h4>Chipirones a la Plancha</h4>
+                                <p>Frescos del día, con su ajo y perejil</p>
+                                <div class="price">8€</div>
+                            </div>
+                            <div class="menu-item">
+                                <h4>Lacón con Grelos</p>
+                                <p>Plato tradicional gallego</p>
+                                <div class="price">12€</div>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="menu-item">
-                        <h4>Cerveza del Día</h4>
-                        <p>Elaboración especial cada jornada. Consulta nuestro tap de barril exclusivo del día.</p>
-                        <div class="price">4€/caña</div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <h4>Postres Caseros</h4>
-                        <p>Tarta de queso, filloas, arroz con leche. Todo como lo hacía la abuela.</p>
-                        <div class="price">Desde 4€</div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <h4>Mariscos Frescos</h4>
-                        <p>Mejillones al vapor, zamburiñas, percebes... Directos de lonja a tu mesa.</p>
-                        <div class="price">Según mercado</div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <h4>Catas Degustación</h4>
-                        <p>Disfruta de nuestras 6 cervezas artesanales con maridaje perfecto para cada una.</p>
-                        <div class="price">18€</div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <h4>Cervezas Artesanales</h4>
-                        <p>IPA American, Golden Ale, Weissbier, Porter, Stout... ¡Variedad rotativa cada mes!</p>
-                        <div class="price">4€/330ml</div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <h4>Vinos Gallegos</h4>
-                        <p>Selección especial de vinos blancos y tintos de bodegas locales.</p>
-                        <div class="price">Desde 15€/botella</div>
-                    </div>
-                    
-                    <div class="menu-item">
-                        <h4>Menú del Día</h4>
-                        <p>Primero, segundo, postre y caña de cerveza. ¡La mejor opción para comer!</p>
-                        <div class="price">15€</div>
+                    <div class="menu-category">
+                        <h3>🍽️ Tapas Innovadoras</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <h4>Croquetas de Cerveza</h4>
+                                <p>Croquetas cremosas con nuestro toque especial</p>
+                                <div class="price">8€</div>
+                            </div>
+                            <div class="menu-item">
+                                <h4>Hamburguesa Gourmet</h4>
+                                <p>Pan artesanal, carne de calidad</p>
+                                <div class="price">10€</div>
+                            </div>
+                            <div class="menu-item">
+                                <h4>Tacos de Pulpo</h4>
+                                <p>Con nuestra receta secreta</p>
+                                <div class="price">9€</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

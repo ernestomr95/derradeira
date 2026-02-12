@@ -83,24 +83,11 @@
         }
         
         .nav-menu a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 0;
-            height: 2px;
-            background: #d4a574;
-            transition: all 0.3s ease;
-            transform: translateX(-50%);
-        }
-        
-        .nav-menu a:hover::after {
-            width: 80%;
+            display: none;
         }
         
         .nav-menu a:hover {
             color: #d4a574;
-            transform: translateY(-2px);
         }
         
         .nav-menu a.active {

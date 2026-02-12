@@ -61,6 +61,11 @@
             letter-spacing: 1px;
         }
         
+        .nav-logo-img {
+            height: 50px;
+            border-radius: 10px;
+        }
+        
         .nav-menu {
             display: flex;
             list-style: none;
@@ -150,6 +155,12 @@
             text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
             letter-spacing: 2px;
             margin-bottom: 10px;
+        }
+        
+        .header-logo {
+            max-width: 300px;
+            border-radius: 15px;
+            margin-bottom: 20px;
         }
         
         .tagline {
@@ -897,7 +908,7 @@
 <body>
     <nav>
         <div class="nav-container">
-            <div class="nav-logo">A Derradeira</div>
+            <img src="logo.jpg" alt="A Derradeira" class="nav-logo-img">
             <ul class="nav-menu">
                 <li><a href="#inicio" class="nav-link active" data-section="inicio">Inicio</a></li>
                 <li><a href="#galeria" class="nav-link" data-section="galeria">Galería</a></li>
@@ -914,7 +925,7 @@
     <section id="inicio" class="section active">
         <header>
             <div class="container">
-                <h1 class="logo">A Derradeira</h1>
+                <img src="logo.jpg" alt="A Derradeira" class="header-logo">
                 <p class="tagline">Cervezas Artesanas y Comida Casera</p>
             </div>
         </header>

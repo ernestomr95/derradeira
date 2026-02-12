@@ -14,9 +14,9 @@
         body {
             min-height: 100vh;
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #d4a574 0%, #8b4513 50%, #3e2723 100%);
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
             background-attachment: fixed;
-            color: #fff;
+            color: #e8e8e8;
         }
         
         .container {
@@ -166,22 +166,23 @@
         .tagline {
             font-size: 1.5em;
             margin-top: 10px;
-            color: #ffd700;
+            color: #ff6b6b;
             font-style: italic;
         }
         
         .hero {
-            background: rgba(0,0,0,0.3);
+            background: rgba(255, 107, 107, 0.15);
             padding: 60px 20px;
             text-align: center;
             margin: 40px 0;
             border-radius: 20px;
+            border: 1px solid rgba(255, 107, 107, 0.3);
         }
         
         .hero h2 {
             font-size: 2.5em;
             margin-bottom: 20px;
-            color: #ffd700;
+            color: #ff6b6b;
         }
         
         .hero p {
@@ -199,12 +200,12 @@
         }
         
         .feature {
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 107, 107, 0.1);
             padding: 40px;
             border-radius: 15px;
             text-align: center;
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.2);
+            border: 1px solid rgba(255, 107, 107, 0.2);
             transition: transform 0.3s ease;
         }
         
@@ -220,7 +221,7 @@
         .feature h3 {
             font-size: 1.8em;
             margin-bottom: 15px;
-            color: #ffd700;
+            color: #ff6b6b;
         }
         
         .feature p {
@@ -554,7 +555,6 @@
                 gap: 30px;
             }
         }
-            }
             
             .tagline {
                 font-size: 1.3em;
@@ -846,7 +846,6 @@
             line-height: 1.5;
             margin-bottom: 10px;
         }
-            }
             
             .tagline {
                 font-size: 1.3em;
@@ -904,6 +903,7 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav>
@@ -911,6 +911,7 @@
             <img src="logo.jpg" alt="A Derradeira" class="nav-logo-img">
             <ul class="nav-menu">
                 <li><a href="#inicio" class="nav-link active" data-section="inicio">Inicio</a></li>
+                <li><a href="#carta" class="nav-link" data-section="carta">Carta</a></li>
                 <li><a href="#galeria" class="nav-link" data-section="galeria">Galería</a></li>
                 <li><a href="#calendario" class="nav-link" data-section="calendario">Eventos</a></li>
                 <li><a href="#instagram" class="nav-link" data-section="instagram">Instagram</a></li>
@@ -1078,7 +1079,7 @@
                 </div>
                 <div class="review-item">
                     <div class="stars">⭐⭐⭐⭐</div>
-                    <p class="review-text">"Excelente servicio y cervezas espectaculares. Las catas son muy recomendables."</p>
+                    <p class="review-text">"Excelente servicio y cervezas espectaculaciones. Las catas son muy recomendables."</p>
                     <p class="review-author">- Ana Martínez</p>
                 </div>
                 <div class="review-item">
@@ -1097,103 +1098,34 @@
         </div>
     </section>
 
-    <!-- Sección Carta -->
-    <section id="carta" class="section">
+    <!-- Sección Carta (bonita en tarjetas) -->
+    <section id="carta" class="section carta">
         <div class="container">
-            <div class="menu-preview">
-                <h2>Nuestra Carta</h2>
-                
-                <!-- COMIDA - ARRIBA -->
-                <div class="menu-categoria">
-                    <h3 class="categoria-titulo">🍽️ Comida</h3>
-                    <div class="menu-items">
-                        <div class="menu-item">
-                            <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=300" alt="Pimientos de Padrón" class="menu-img">
-                            <h4>Pimientos de Padrón</h4>
-                            <p>Directos de Padrón, al punto perfecto</p>
-                            <div class="price">6€</div>
-                        </div>
-                        <div class="menu-item">
-                            <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=300" alt="Chipirones" class="menu-img">
-                            <h4>Chipirones a la Plancha</h4>
-                            <p>Frescos del día, con su ajo y perejil</p>
-                            <div class="price">8€</div>
-                        </div>
-                        <div class="menu-item">
-                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300" alt="Lacón con Grelos" class="menu-img">
-                            <h4>Lacón con Grelos</h4>
-                            <p>Plato tradicional gallego</p>
-                            <div class="price">12€</div>
-                        </div>
-                        <div class="menu-item">
-                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=300" alt="Croquetas" class="menu-img">
-                            <h4>Croquetas de Cerveza</h4>
-                            <p>Croquetas cremosas con nuestro toque especial</p>
-                            <div class="price">8€</div>
-                        </div>
-                        <div class="menu-item">
-                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300" alt="Hamburguesa" class="menu-img">
-                            <h4>Hamburguesa Gourmet</h4>
-                            <p>Pan artesanal, carne de calidad</p>
-                            <div class="price">10€</div>
-                        </div>
-                        <div class="menu-item">
-                            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300" alt="Tacos de Pulpo" class="menu-img">
-                            <h4>Tacos de Pulpo</h4>
-                            <p>Con nuestra receta secreta</p>
-                            <div class="price">9€</div>
-                        </div>
-                        <div class="menu-item">
-                            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=300" alt="Postres" class="menu-img">
-                            <h4>Postres Caseros</h4>
-                            <p>Tarta de queso, filloas, arroz con leche</p>
-                            <div class="price">Desde 4€</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- CERVEZAS - ABAJO -->
-                <div class="menu-categoria">
-                    <h3 class="categoria-titulo">🍺 Cervezas Artesanales</h3>
-                    <div class="menu-items">
-                        <div class="menu-item">
-                            <img src="https://images.unsplash.com/photo-1535958636474-b021ee887b13?w=300" alt="IPA" class="menu-img">
-                            <h4>IPA American</h4>
-                            <p>Lúpulo fuerte, notas cítricas y amargor equilibrado</p>
-                            <div class="price">4€/caña</div>
-                        </div>
-                        <div class="menu-item">
-                            <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?w=300" alt="Golden Ale" class="menu-img">
-                            <h4>Golden Ale</h4>
-                            <p>Suave, afrutada, fácil de beber</p>
-                            <div class="price">4€/caña</div>
-                        </div>
-                        <div class="menu-item">
-                            <img src="https://images.unsplash.com/photo-1575037614876-c38a4d44f5b8?w=300" alt="Stout" class="menu-img">
-                            <h4>Stout</h4>
-                            <p>Torrefacción, notas de café y chocolate</p>
-                            <div class="price">4.5€/caña</div>
-                        </div>
-                        <div class="menu-item">
-                            <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?w=300" alt="Weissbier" class="menu-img">
-                            <h4>Weissbier</h4>
-                            <p>Trigo, ligera, refrescante</p>
-                            <div class="price">3.5€/caña</div>
-                        </div>
-                        <div class="menu-item">
-                            <img src="https://images.unsplash.com/photo-1559526323-cb2f2fe2591b?w=300" alt="Cerveza del día" class="menu-img">
-                            <h4>Cerveza del Día</h4>
-                            <p>Elaboración especial cada jornada</p>
-                            <div class="price">4€/caña</div>
-                        </div>
-                        <div class="menu-item">
-                            <img src="https://images.unsplash.com/photo-1600788886242-5c96aabe3757?w=300" alt="Cata" class="menu-img">
-                            <h4>Cata de Cervezas</h4>
-                            <p>6 cervezas artesanales con maridaje</p>
-                            <div class="price">18€</div>
-                        </div>
-                    </div>
-                </div>
+            <h2 class="section-title">Carta</h2>
+            <div class="cards-grid" aria-label="Carta detallada">
+              <article class="card category-food" aria-labelledby="food-title">
+                <header id="food-title" class="card-header">Comida</header>
+                <ul class="menu-list">
+                  <li><span>Pimientos de Padrón</span><span class="price">6€</span></li>
+                  <li><span>Chipirones a la Plancha</span><span class="price">8€</span></li>
+                  <li><span>Lacón con Grelos</span><span class="price">12€</span></li>
+                  <li><span>Croquetas de Cerveza</span><span class="price">8€</span></li>
+                  <li><span>Hamburguesa Gourmet</span><span class="price">10€</span></li>
+                  <li><span>Tacos de Pulpo</span><span class="price">9€</span></li>
+                  <li><span>Postres Caseros</span><span class="price">Desde 4€</span></li>
+                </ul>
+              </article>
+              <article class="card category-beer" aria-labelledby="beer-title">
+                <header id="beer-title" class="card-header">Cervezas Artesanales</header>
+                <ul class="menu-list">
+                  <li><span>IPA American</span><span class="price">4€ / caña</span></li>
+                  <li><span>Golden Ale</span><span class="price">4€ / caña</span></li>
+                  <li><span>Stout</span><span class="price">4.5€ / caña</span></li>
+                  <li><span>Weissbier</span><span class="price">3.5€ / caña</span></li>
+                  <li><span>Cerveza del Día</span><span class="price">4€ / caña</span></li>
+                  <li><span>Cata de Cervezas</span><span class="price">18€</span></li>
+                </ul>
+              </article>
             </div>
         </div>
     </section>

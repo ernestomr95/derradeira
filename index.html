@@ -312,6 +312,29 @@
             font-size: 0.95em;
         }
         
+        .menu-item {
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .menu-item-photo {
+            display: none;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(74, 124, 89, 0.3);
+        }
+        
+        .menu-item-photo img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+        .menu-item.active .menu-item-photo {
+            display: block;
+        }
+        
         .price {
             font-size: 1.3em;
             font-weight: bold;
@@ -1075,6 +1098,9 @@
                             <p>Mediana — <span class="price">14,50€</span></p>
                             <p>Grande — <span class="price">18,50€</span></p>
                         </div>
+                        <div class="menu-item-photo">
+                            <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400" alt="Tortilla con queijo azul">
+                        </div>
                     </div>
                     <div class="menu-item">
                         <h4>Tortilla con chourizo</h4>
@@ -1083,6 +1109,9 @@
                             <p>Mediana — <span class="price">14,00€</span></p>
                             <p>Grande — <span class="price">18,00€</span></p>
                         </div>
+                        <div class="menu-item-photo">
+                            <img src="https://images.unsplash.com/photo-1595295333158-4742f28fbd85?w=400" alt="Tortilla con chourizo">
+                        </div>
                     </div>
                     <div class="menu-item">
                         <h4>Tortilla clásica</h4>
@@ -1090,6 +1119,9 @@
                             <p>Pequeña — <span class="price">7,50€</span></p>
                             <p>Mediana — <span class="price">13,50€</span></p>
                             <p>Grande — <span class="price">17,50€</span></p>
+                        </div>
+                        <div class="menu-item-photo">
+                            <img src="https://images.unsplash.com/photo-1510693206972-df098062cb71?w=400" alt="Tortilla clásica">
                         </div>
                     </div>
                 </div>
@@ -1103,11 +1135,17 @@
                         <h4>Ensalada simple</h4>
                         <p>(lechuga, cebolla, tomate)</p>
                         <div class="price">5,50€</div>
+                        <div class="menu-item-photo">
+                            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400" alt="Ensalada simple">
+                        </div>
                     </div>
                     <div class="menu-item">
                         <h4>Ensalada capresse</h4>
                         <p>(tomate, mozzarella y aceite de albahaca)</p>
                         <div class="price">7,00€</div>
+                        <div class="menu-item-photo">
+                            <img src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?w=400" alt="Ensalada capresse">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1119,54 +1157,93 @@
                     <div class="menu-item">
                         <h4>Bágoas de polo</h4>
                         <div class="price">11,50€</div>
+                        <div class="menu-item-photo">
+                            <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=400" alt="Bágoas de polo">
+                        </div>
                     </div>
                     <div class="menu-item">
                         <h4>Raxo con patacas fritidas</h4>
                         <div class="price">13,50€</div>
+                        <div class="menu-item-photo">
+                            <img src="https://images.unsplash.com/photo-1623595119708-26b1f7500c5e?w=400" alt="Raxo con patacas">
+                        </div>
                     </div>
                     <div class="menu-item">
                         <h4>Zorza con patacas fritidas</h4>
                         <div class="price">14,00€</div>
+                        <div class="menu-item-photo">
+                            <img src="https://images.unsplash.com/photo-1594041680534-e8c8cdebd659?w=400" alt="Zorza con patacas">
+                        </div>
                     </div>
                     <div class="menu-item">
                         <h4>Solombo de porco á prancha</h4>
                         <div class="price">13,00€</div>
+                        <div class="menu-item-photo">
+                            <img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=400" alt="Solombo de porco">
+                        </div>
                     </div>
                     <div class="menu-item">
                         <h4>Chouriciños ao viño</h4>
                         <div class="price">8,50€</div>
+                        <div class="menu-item-photo">
+                            <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=400" alt="Chouriciños">
+                        </div>
                     </div>
                     <div class="menu-item">
                         <h4>Lacón á feira con cachelos</h4>
                         <div class="price">10,00€</div>
+                        <div class="menu-item-photo">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400" alt="Lacón">
+                        </div>
                     </div>
                     <div class="menu-item">
                         <h4>Xamón asado</h4>
                         <div class="price">12,50€</div>
+                        <div class="menu-item-photo">
+                            <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=400" alt="Xamón asado">
+                        </div>
                     </div>
                     <div class="menu-item">
                         <h4>Pementos de Padrón</h4>
                         <div class="price">8,50€</div>
+                        <div class="menu-item-photo">
+                            <img src="https://images.unsplash.com/photo-1604152135912-04a022e23696?w=400" alt="Pementos de Padrón">
+                        </div>
                     </div>
                     <div class="menu-item">
                         <h4>Táboa de queixos</h4>
                         <div class="price">9,50€</div>
+                        <div class="menu-item-photo">
+                            <img src="https://images.unsplash.com/photo-1452195100486-9cc805987862?w=400" alt="Táboa de queixos">
+                        </div>
                     </div>
                     <div class="menu-item">
                         <h4>Humus de garavanzo</h4>
                         <div class="price">7,00€</div>
+                        <div class="menu-item-photo">
+                            <img src="https://images.unsplash.com/photo-1577805947697-89e18249d767?w=400" alt="Humus">
+                        </div>
                     </div>
                     <div class="menu-item">
                         <h4>Humus de lentellas</h4>
                         <div class="price">7,00€</div>
+                        <div class="menu-item-photo">
+                            <img src="https://images.unsplash.com/photo-1511690656952-34342d2c7136?w=400" alt="Humus de lentellas">
+                        </div>
                     </div>
                     <div class="menu-item">
                         <h4>Patacas fritidas</h4>
                         <div class="price">4,00€</div>
+                        <div class="menu-item-photo">
+                            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400" alt="Patacas fritidas">
+                        </div>
                     </div>
                     <div class="menu-item">
                         <h4>Pan</h4>
                         <div class="price">0,60€</div>
+                        <div class="menu-item-photo">
+                            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400" alt="Pan">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1178,18 +1255,30 @@
                     <div class="menu-item">
                         <h4>Tarta da avoa</h4>
                         <div class="price">6,00€</div>
+                        <div class="menu-item-photo">
+                            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400" alt="Tarta da avoa">
+                        </div>
                     </div>
                     <div class="menu-item">
                         <h4>Tiramisú</h4>
                         <div class="price">6,00€</div>
+                        <div class="menu-item-photo">
+                            <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400" alt="Tiramisú">
+                        </div>
                     </div>
                     <div class="menu-item">
                         <h4>Tarta de café</h4>
                         <div class="price">5,00€</div>
+                        <div class="menu-item-photo">
+                            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400" alt="Tarta de café">
+                        </div>
                     </div>
                     <div class="menu-item">
                         <h4>Tarta de queixo</h4>
                         <div class="price">6,00€</div>
+                        <div class="menu-item-photo">
+                            <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=400" alt="Tarta de queixo">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1201,18 +1290,30 @@
                     <div class="menu-item">
                         <h4>Queixo do país</h4>
                         <div class="price">4,50€</div>
+                        <div class="menu-item-photo">
+                            <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400" alt="Bocadillo de queso">
+                        </div>
                     </div>
                     <div class="menu-item">
                         <h4>Peituga de polo</h4>
                         <div class="price">5,00€</div>
+                        <div class="menu-item-photo">
+                            <img src="https://images.unsplash.com/photo-1619860860774-1428c09929db?w=400" alt="Bocadillo de pollo">
+                        </div>
                     </div>
                     <div class="menu-item">
                         <h4>Lacón á feira</h4>
                         <div class="price">7,50€</div>
+                        <div class="menu-item-photo">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400" alt="Bocadillo de lacón">
+                        </div>
                     </div>
                     <div class="menu-item">
                         <h4>Raxo</h4>
                         <div class="price">7,00€</div>
+                        <div class="menu-item-photo">
+                            <img src="https://images.unsplash.com/photo-1623595119708-26b1f7500c5e?w=400" alt="Bocadillo de raxo">
+                        </div>
                     </div>
                     <div class="menu-item">
                         <h4>Zorza</h4>
@@ -1377,8 +1478,23 @@
         document.addEventListener('click', (e) => {
             if (!navbar.contains(e.target) && !navMenu.contains(e.target)) {
                 navMenu.classList.remove('active');
-                mobileOverlay.classList.remove('active');
             }
+        });
+
+        // Menu item photo toggle
+        const menuItems = document.querySelectorAll('.menu-item');
+        menuItems.forEach(item => {
+            item.addEventListener('click', (e) => {
+                // Toggle current item
+                item.classList.toggle('active');
+                
+                // Close other items
+                menuItems.forEach(other => {
+                    if (other !== item) {
+                        other.classList.remove('active');
+                    }
+                });
+            });
         });
     </script>
 </body>

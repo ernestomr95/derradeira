@@ -1483,15 +1483,17 @@
 
         // Menu item photo toggle
         const menuItems = document.querySelectorAll('.menu-item');
+        console.log('Found menu items:', menuItems.length);
         menuItems.forEach(item => {
-            item.addEventListener('click', (e) => {
+            item.addEventListener('click', function(e) {
+                console.log('Clicked:', this.querySelector('h4').textContent);
                 e.stopPropagation();
                 // Toggle current item
-                item.classList.toggle('active');
+                this.classList.toggle('active');
                 
                 // Close other items
                 menuItems.forEach(other => {
-                    if (other !== item) {
+                    if (other !== this) {
                         other.classList.remove('active');
                     }
                 });
